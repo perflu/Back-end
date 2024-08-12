@@ -23,6 +23,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
+        backend\Scripts\activate
+        cd myproject
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
