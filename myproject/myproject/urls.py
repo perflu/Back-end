@@ -20,5 +20,5 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include("rest_framework.urls")),
+    path("", include("subtitles.urls")), # type: ignore
 ]
